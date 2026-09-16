@@ -49,16 +49,16 @@ export const FAMILIAR_ITEMS = [
 
 export const WHO_WE_TREAT = [
   {
-    title: "Adults",
-    description:
-      "Care for adults with depression, including medication-resistant and treatment-resistant depression.",
-    image: IMAGES.adults,
-  },
-  {
     title: "Teens 15-21",
     description:
       "Specialized adolescent TMS from the #1 TMS provider for teens in Spokane.",
     image: IMAGES.teens,
+  },
+  {
+    title: "Adults",
+    description:
+      "Care for adults with depression, including medication-resistant and treatment-resistant depression.",
+    image: IMAGES.adults,
   },
   {
     title: "Specialized Support",
