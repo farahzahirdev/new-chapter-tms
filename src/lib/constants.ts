@@ -14,6 +14,7 @@ export const IMAGES = {
   flowers: "/images/flowers.jpg",
   whyBg: "/images/why-bg.jpg",
   treatmentRoom: "/images/treatment-room.jpg",
+  finalCta: "/images/final-cta.jpg",
   familiar: "/images/familiar.jpg",
   faq: "/images/faq.jpg",
 } as const;
