@@ -23,6 +23,8 @@ export const IMAGES = {
     juanita: "/images/team/juanita.jpg",
     samantha: "/images/team/samantha.jpg",
     rebecca: "/images/team/rebecca.jpg",
+    gracie: "/images/team/gracie.jpg",
+    posey: "/images/team/posey.jpg",
   },
 } as const;
 
@@ -116,6 +118,23 @@ export const PROVIDERS = [
       "Brings therapy and behavioral health experience to every session so clients feel supported, informed, and at ease on their path toward wellness.",
     image: IMAGES.team.rebecca,
     objectPosition: "center top",
+  },
+] as const;
+
+export const CLINIC_COMPANIONS = [
+  {
+    name: "Gracie Lou",
+    role: "Director of Determination",
+    blurb:
+      "Our black lab mix is as spirited as she is sweet. Known for bold independence and unstoppable determination, whether she's finding her own way or sneaking tomatoes from the garden, Gracie embodies courage, adaptability, and the kind of resilience that inspires us all.",
+    image: IMAGES.team.gracie,
+  },
+  {
+    name: "Posey",
+    role: "Chief Smile Officer",
+    blurb:
+      "Our golden retriever radiates pure sunshine. With her trademark grin and famously floofy coat, she moves through life convinced that everyone she meets wants to be her friend, and honestly, she's not wrong. Posey reminds us that warmth and play are powerful forms of healing.",
+    image: IMAGES.team.posey,
   },
 ] as const;
 

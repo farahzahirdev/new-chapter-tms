@@ -565,6 +565,129 @@ li {
   }
 }
 
+.companions-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 12% 18%, rgba(224, 187, 128, 0.22), transparent 58%),
+    radial-gradient(ellipse 60% 50% at 88% 82%, rgba(105, 23, 108, 0.07), transparent 55%),
+    linear-gradient(180deg, #fbf8f6 0%, #f7f1eb 48%, #faf6fb 100%);
+}
+
+.companions-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: auto -10% -20% -10%;
+  height: 45%;
+  background: radial-gradient(ellipse at center, rgba(224, 187, 128, 0.16), transparent 70%);
+}
+
+.companions-grid {
+  display: grid;
+  gap: 2.5rem;
+  justify-items: center;
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .companions-grid {
+    grid-template-columns: repeat(2, minmax(0, 19rem));
+    justify-content: center;
+    justify-items: center;
+    gap: 3rem 6.5rem;
+    align-items: start;
+    max-width: none;
+  }
+}
+
+.companion-panel {
+  display: grid;
+  gap: 1.15rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 19rem;
+  animation: companion-rise 0.9s ease both;
+}
+
+.companion-panel-2 {
+  animation-delay: 0.12s;
+}
+
+@keyframes companion-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .companion-panel {
+    animation: none;
+  }
+}
+
+.companion-art {
+  position: relative;
+  width: 100%;
+  max-width: 17.5rem;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 1.25rem 1.25rem 1.25rem 0.35rem;
+  background: #efe6d8;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.65) inset,
+    0 14px 32px rgba(58, 42, 60, 0.1);
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+@media (min-width: 900px) {
+  .companion-art {
+    max-width: 19rem;
+  }
+}
+
+.companion-panel:hover .companion-art {
+  transform: translateY(-4px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.65) inset,
+    0 20px 40px rgba(58, 42, 60, 0.14);
+}
+
+.companion-copy {
+  max-width: 19rem;
+  padding-inline: 0.15rem;
+  text-align: center;
+}
+
+.companion-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent-700);
+}
+
+.companion-name {
+  margin-top: 0.35rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-brand-600);
+}
+
+.companion-blurb {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--color-ink) 78%, white);
+}
+
 .testimonial-grid {
   display: grid;
   gap: 1.25rem;
