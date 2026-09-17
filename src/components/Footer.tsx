@@ -56,6 +56,9 @@ export default function Footer() {
             <a href="#about-tms" className="transition-colors hover:text-white">
               About TMS
             </a>
+            <a href="#providers" className="transition-colors hover:text-white">
+              Providers
+            </a>
             <a href="#insurance" className="transition-colors hover:text-white">
               Insurance
             </a>

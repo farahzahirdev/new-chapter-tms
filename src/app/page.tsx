@@ -3,6 +3,7 @@ import Familiar from "@/components/Familiar";
 import WhoWeTreat from "@/components/WhoWeTreat";
 import WhatIsTms from "@/components/WhatIsTms";
 import WhyDifferent from "@/components/WhyDifferent";
+import Providers from "@/components/Providers";
 import NeuroStar from "@/components/NeuroStar";
 import Insurance from "@/components/Insurance";
 import Testimonials from "@/components/Testimonials";
@@ -18,6 +19,7 @@ export default function Home() {
       <WhoWeTreat />
       <WhatIsTms />
       <WhyDifferent />
+      <Providers />
       <NeuroStar />
       <Insurance />
       <Testimonials />

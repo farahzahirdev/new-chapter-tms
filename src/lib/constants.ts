@@ -17,6 +17,13 @@ export const IMAGES = {
   finalCta: "/images/final-cta.jpg",
   familiar: "/images/familiar.jpg",
   faq: "/images/faq.jpg",
+  team: {
+    kiira: "/images/team/kiira.jpg",
+    will: "/images/team/will.jpg",
+    juanita: "/images/team/juanita.jpg",
+    samantha: "/images/team/samantha.jpg",
+    rebecca: "/images/team/rebecca.jpg",
+  },
 } as const;
 
 /** Twilio tracking number from landing page brief */
@@ -66,6 +73,49 @@ export const WHO_WE_TREAT = [
     description:
       "Support for OCD, anxiety, perinatal mental health, EMS, and active duty service members.",
     image: IMAGES.specialized,
+  },
+] as const;
+
+export const PROVIDERS = [
+  {
+    name: "Dr. Kiira Tietjen, DNP, PMHNP-BC",
+    role: "Co-Founder & Psychiatric Nurse Practitioner",
+    blurb:
+      "Over a decade helping children, teens, and adults when traditional care is not enough. PULSES-certified TMS provider and NeuroStar Key Opinion Leader.",
+    image: IMAGES.team.kiira,
+    objectPosition: "center top",
+  },
+  {
+    name: "Will Normington",
+    role: "Co-Founder & TMS Treatment Specialist",
+    blurb:
+      "More than 25 years in behavioral health. Known for a calm, approachable style that helps every patient feel supported through precise TMS care.",
+    image: IMAGES.team.will,
+    objectPosition: "center top",
+  },
+  {
+    name: "Juanita Lee",
+    role: "TMS Technician",
+    blurb:
+      "New Chapter's first TMS technician. Recognized for a charismatic, caring presence that helps patients feel safe and comfortable throughout treatment.",
+    image: IMAGES.team.juanita,
+    objectPosition: "center 12%",
+  },
+  {
+    name: "Samantha Anglin",
+    role: "TMS Technician & Clinical Coordinator",
+    blurb:
+      "Blends clinical skill with compassion in the chair and behind the scenes, keeping each step of care smooth, personalized, and centered on connection.",
+    image: IMAGES.team.samantha,
+    objectPosition: "center top",
+  },
+  {
+    name: "Rebecca Haynes, MSW, LICSW",
+    role: "TMS Technician & Licensed Clinical Social Worker",
+    blurb:
+      "Brings therapy and behavioral health experience to every session so clients feel supported, informed, and at ease on their path toward wellness.",
+    image: IMAGES.team.rebecca,
+    objectPosition: "center top",
   },
 ] as const;
 
