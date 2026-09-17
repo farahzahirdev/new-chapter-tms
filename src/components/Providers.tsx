@@ -3,7 +3,11 @@ import { PROVIDERS } from "@/lib/constants";
 
 export default function Providers() {
   return (
-    <section id="providers" className="section-padding bg-brand-50/60">
+    <section
+      id="providers"
+      className="section-padding"
+      style={{ background: "oklab(97.7625% .00594094 -.00508362 / .7)" }}
+    >
       <div className="container-main">
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-label section-label-center justify-center">Our providers</p>

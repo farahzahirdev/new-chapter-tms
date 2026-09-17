@@ -11,7 +11,11 @@ const CREDENTIALS = [
 
 export default function NeuroStar() {
   return (
-    <section id="neurostar" className="section-padding bg-brand-50">
+    <section
+      id="neurostar"
+      className="section-padding"
+      style={{ background: "#f6f0f7" }}
+    >
       <div className="container-main">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="relative overflow-hidden rounded-2xl border border-brand-100 bg-white p-8 shadow-sm sm:p-10">
