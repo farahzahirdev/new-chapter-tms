@@ -74,11 +74,12 @@ export default function FAQ() {
           <div className="faq-split-media">
             <div className="relative aspect-[3/2] w-full overflow-hidden rounded-2xl border border-brand-100 shadow-sm lg:aspect-[4/5]">
               <Image
-                src={IMAGES.faq}
-                alt="New Chapter TMS welcoming clinic space in Spokane"
+                src={IMAGES.treatmentRoom}
+                alt="NeuroStar TMS treatment room at New Chapter TMS"
                 fill
                 className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 42vw"
+                sizes="(max-width: 1024px) 100vw, 420px"
+                quality={90}
               />
             </div>
           </div>

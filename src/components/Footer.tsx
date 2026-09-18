@@ -18,9 +18,9 @@ export default function Footer() {
           <Image
             src={LOGO_WHITE_URL}
             alt="New Chapter TMS"
-            width={240}
-            height={33}
-            className="h-9 w-auto sm:h-10"
+            width={360}
+            height={50}
+            className="h-10 w-auto max-w-full object-contain object-left sm:h-11"
             unoptimized
           />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-brand-100">

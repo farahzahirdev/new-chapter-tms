@@ -9,11 +9,12 @@ export default function WhatIsTms() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-brand-100 shadow-sm lg:aspect-[5/4]">
             <Image
-              src={IMAGES.treatmentRoom}
-              alt="NeuroStar TMS treatment at New Chapter TMS"
+              src={IMAGES.office}
+              alt="New Chapter TMS clinic waiting area in Spokane"
               fill
               className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, 560px"
+              quality={90}
             />
           </div>
 

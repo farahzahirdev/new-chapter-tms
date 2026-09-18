@@ -54,9 +54,9 @@ export default function Header() {
             <Image
               src={LOGO_URL}
               alt="New Chapter TMS"
-              width={280}
-              height={39}
-              className="h-9 w-auto sm:h-11"
+              width={200}
+              height={28}
+              className="h-7 w-auto max-w-[9.5rem] object-contain object-left sm:h-8 sm:max-w-[11rem]"
               priority
               unoptimized
             />

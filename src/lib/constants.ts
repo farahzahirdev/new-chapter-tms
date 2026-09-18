@@ -1,30 +1,36 @@
-export const LOGO_URL = "/images/logo.png";
-export const LOGO_WHITE_URL = "/images/logo-white.png";
+/** Bump this when replacing files in public/images so caches refresh */
+const IMG_V = "20250918e";
+
+const img = (publicPath: string) => `${publicPath}?v=${IMG_V}`;
+
+export const LOGO_URL = img("/images/logo.png");
+export const LOGO_WHITE_URL = img("/images/logo-white.png");
 
 export const IMAGES = {
-  heroBg: "/images/hero.jpg",
-  heroes: ["/images/hero.jpg", "/images/hero2.jpg", "/images/hero3.jpg"] as const,
-  consultation: "/images/consultation.jpg",
-  teens: "/images/teens.jpg",
-  adults: "/images/adults.jpg",
-  specialized: "/images/specialized.jpg",
-  neurostar: "/images/device.jpg",
-  neurostarLogo: "/images/neurostar-logo.png",
-  neurostarBg: "/images/neurostar-bg.jpg",
-  flowers: "/images/flowers.jpg",
-  whyBg: "/images/why-bg.jpg",
-  treatmentRoom: "/images/treatment-room.jpg",
-  finalCta: "/images/final-cta.jpg",
-  familiar: "/images/familiar.jpg",
-  faq: "/images/faq.jpg",
+  heroBg: img("/images/hero.jpg"),
+  heroes: [img("/images/hero.jpg"), img("/images/hero2.jpg"), img("/images/hero3.jpg")] as const,
+  consultation: img("/images/consultation.jpg"),
+  teens: img("/images/teens.jpg"),
+  adults: img("/images/adults.jpg"),
+  specialized: img("/images/specialized.jpg"),
+  neurostar: img("/images/device.jpg"),
+  neurostarLogo: img("/images/neurostar-logo.png"),
+  neurostarBg: img("/images/neurostar-bg.jpg"),
+  flowers: img("/images/flowers.jpg"),
+  whyBg: img("/images/why-bg.jpg"),
+  treatmentRoom: img("/images/treatment-room.jpg"),
+  office: img("/images/office.jpg"),
+  finalCta: img("/images/faq.jpg"),
+  familiar: img("/images/familiar.jpg"),
+  faq: img("/images/faq.jpg"),
   team: {
-    kiira: "/images/team/kiira.jpg",
-    will: "/images/team/will.jpg",
-    juanita: "/images/team/juanita.jpg",
-    samantha: "/images/team/samantha.jpg",
-    rebecca: "/images/team/rebecca.jpg",
-    gracie: "/images/team/gracie.jpg",
-    posey: "/images/team/posey.jpg",
+    kiira: img("/images/team/kiira.jpg"),
+    will: img("/images/team/will.jpg"),
+    juanita: img("/images/team/juanita.jpg"),
+    samantha: img("/images/team/samantha.jpg"),
+    rebecca: img("/images/team/rebecca.jpg"),
+    gracie: img("/images/team/gracie.jpg"),
+    posey: img("/images/team/posey.jpg"),
   },
 } as const;
 
@@ -199,16 +205,24 @@ export const TESTIMONIALS = [
   },
 ] as const;
 
-export const INSURANCE_PLANS = [
-  "Most major plans",
-  "Medicare",
-  "Medicaid",
-  "Premera",
-  "Regence",
-  "Aetna",
-  "Cigna",
-  "UnitedHealthcare",
+export const INSURANCE_LOGOS = [
+  { name: "Aetna", src: img("/images/insurance/aetna.png"), width: 320, height: 68 },
+  { name: "Asuris", src: img("/images/insurance/asuris.png"), width: 280, height: 88 },
+  { name: "Cigna", src: img("/images/insurance/cigna.png"), width: 280, height: 100 },
+  { name: "First Choice", src: img("/images/insurance/firstchoice.png"), width: 360, height: 40 },
+  { name: "PacificSource", src: img("/images/insurance/pacificsource.png"), width: 320, height: 66 },
+  { name: "Providence", src: img("/images/insurance/providence.png"), width: 280, height: 80 },
+  { name: "Wellfleet", src: img("/images/insurance/wellfleet.png"), width: 320, height: 60 },
+  { name: "Premera Blue Cross", src: img("/images/insurance/premera.png"), width: 280, height: 80 },
+  { name: "Regence", src: img("/images/insurance/regence.png"), width: 300, height: 62 },
+  { name: "TRICARE", src: img("/images/insurance/tricare.png"), width: 200, height: 100 },
+  { name: "UnitedHealthcare", src: img("/images/insurance/united.png"), width: 220, height: 92 },
+  { name: "WA L&I", src: img("/images/insurance/li.png"), width: 300, height: 66 },
+  { name: "Molina", src: img("/images/insurance/molina.png"), width: 280, height: 84 },
+  { name: "Wellpoint", src: img("/images/insurance/wellpoint.png"), width: 260, height: 84 },
 ] as const;
+
+export const INSURANCE_ALSO = ["WA State Medicaid plans", "Community Health Plan of WA", "Coordinated Care"] as const;
 
 export const FAQ_ITEMS = [
   {

@@ -24,7 +24,8 @@ export default function WhoWeTreat() {
                 alt=""
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 768px) 100vw, 360px"
+                quality={90}
               />
               <div className="audience-copy">
                 <h3 className="text-2xl text-white">{item.title}</h3>
