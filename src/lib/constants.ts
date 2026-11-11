@@ -38,10 +38,10 @@ export const IMAGES = {
 export const PHONE_NUMBER = "(509) 844-9239";
 export const PHONE_HREF = "tel:+15098449239";
 
-export const ADDRESS = "140 S Arthur St, Suite 506, Spokane, WA 99202";
+export const ADDRESS = "222 W Mission Ave, Suite 30, Spokane, WA 99201";
 export const HOURS = "Monday-Friday, by appointment";
 export const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=New+Chapter+TMS,+140+S+Arthur+St+Suite+506,+Spokane,+WA+99202";
+  "https://www.google.com/maps/search/?api=1&query=New+Chapter+TMS,+222+W+Mission+Ave+Suite+30,+Spokane,+WA+99201";
 export const WEBSITE_URL = "https://www.newchaptertms.org";
 export const EMAIL = "admin@newchaptertms.org";
 
